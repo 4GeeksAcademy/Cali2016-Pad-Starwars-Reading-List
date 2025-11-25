@@ -1,6 +1,3 @@
-// ================================
-//  INITIAL GLOBAL STATE
-// ================================
 export const initialStore = () => ({
     people: [],
     planets: [],
@@ -8,9 +5,6 @@ export const initialStore = () => ({
     favorites: []
 });
 
-// ================================
-//  ACTIONS
-// ================================
 export const actions = {
     loadPeople: async ({ dispatch }) => {
         try {
@@ -42,7 +36,6 @@ export const actions = {
         }
     },
 
-    // ⭐ Prevent duplicates
     addFavorite: ({ store, dispatch }, item) => {
         const exists = store.favorites.some(f => f.uid === item.uid);
 
@@ -63,9 +56,6 @@ export const actions = {
     }
 };
 
-// ================================
-//  REDUCER (THIS MUST BE DEFAULT EXPORT)
-// ================================
 export default function reducer(state, action) {
     switch (action.type) {
         case "SET_PEOPLE":

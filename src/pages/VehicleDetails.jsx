@@ -27,7 +27,6 @@ export default function VehicleDetails() {
         <div className="container mt-5">
             <div className="row">
 
-                {/* IMAGE */}
                 <div className="col-md-4">
                     <img
                         src={imgUrl}
@@ -39,7 +38,6 @@ export default function VehicleDetails() {
                     />
                 </div>
 
-                {/* DETAILS */}
                 <div className="col-md-8">
                     <h1 className="mb-3">{data.properties.name}</h1>
 

@@ -3,8 +3,6 @@ import useGlobalReducer from "../hooks/useGlobalReducer";
 
 export default function Card({ item, type }) {
     const { store, dispatch, actions } = useGlobalReducer();
-
-    // ALWAYS working placeholder image
     const imgUrl = `https://placehold.co/400x600/000000/EEE?text=${encodeURIComponent(
         item.name
     )}`;

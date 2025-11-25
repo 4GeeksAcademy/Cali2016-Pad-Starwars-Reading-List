@@ -1,0 +1,33 @@
+.scroll-row {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card {
+    min-width: 18rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.card img {
+    height: 180px;
+    object-fit: cover;
+}
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+h2.text-danger {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.d-flex.overflow-auto {
+    scrollbar-color: #999 transparent;
+}
